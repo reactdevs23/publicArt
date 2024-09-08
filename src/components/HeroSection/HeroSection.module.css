@@ -1,17 +1,80 @@
 .wrapper {
   background: #1e1e1e;
   position: relative;
+  min-height: 100vh;
+  position: relative;
 }
-
-.img {
-  display: block;
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7 {
+  height: auto;
   width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-  max-width: 100%;
+  position: absolute;
+  object-fit: cover; /* Ensure images are not stretched */
 }
 
+/* Set individual image dimensions */
+.img1 {
+  top: 0%;
+  left: 22%;
+  width: 9%; /* Adjust image size based on viewport width */
+
+  aspect-ratio: 223 / 250; /* Maintain the original aspect ratio */
+}
+
+.img2 {
+  top: 10%;
+  right: 35%;
+  width: 20%;
+
+  aspect-ratio: 467 / 255;
+}
+
+.img3 {
+  top: 0;
+  right: 0;
+  width: 22%;
+
+  aspect-ratio: 333 / 154;
+}
+
+.img4 {
+  bottom: 18%;
+  left: 0%;
+  width: 9%;
+
+  aspect-ratio: 195 / 395.79;
+}
+
+.img5 {
+  bottom: 0%;
+  left: 22%;
+  width: 15%;
+
+  aspect-ratio: 346 / 302;
+}
+
+.img6 {
+  bottom: 10%;
+  right: 10%;
+
+  width: 30%;
+
+  aspect-ratio: 566 / 242;
+}
+
+.img7 {
+  top: 55%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 5%;
+
+  aspect-ratio: 100 / 383;
+}
 .infoContainer {
   position: absolute;
   top: 50%;
@@ -30,7 +93,7 @@
 
 .heading {
   font-family: "Oswald", sans-serif;
-  font-size: 180px;
+  font-size: 10vw;
   font-weight: 700;
   line-height: 100%;
   color: #fff;
@@ -88,24 +151,12 @@
   color: #1e1e1e;
 }
 
-@media only screen and (max-width: 1199px) {
-  .img {
-    height: auto;
-    max-width: 100%;
-  }
-}
-
 @media only screen and (max-width: 991px) {
-  .img {
-    min-height: 100vh;
-  }
-
-  .heading {
-    font-size: 60px;
-  }
-
   .infoContainer {
     gap: 32px;
+  }
+  .heading {
+    font-size: 15vw;
   }
 
   .switch {
@@ -117,5 +168,35 @@
   .arrow,
   .walk {
     max-width: 40px;
+  }
+  .img1 {
+    width: 20%;
+    left: 10%; /* Adjusted from 22% to 25% */
+  }
+
+  .img2 {
+    top: 18%;
+    width: 30%; /* Increased width proportionally */
+  }
+
+  .img3 {
+    width: 30%; /* Increased width proportionally */
+    top: 5%;
+  }
+
+  .img4 {
+    width: 18%; /* Increased width proportionally */
+  }
+
+  .img5 {
+    width: 22%; /* Increased width proportionally */
+  }
+
+  .img6 {
+    width: 40%; /* Increased width proportionally */
+  }
+
+  .img7 {
+    width: 8%; /* Increased width proportionally */
   }
 }
