@@ -5,9 +5,11 @@
 
 .img {
   display: block;
-  object-position: center;
-  object-fit: cover;
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
 }
 
 .infoContainer {
@@ -28,7 +30,7 @@
 
 .heading {
   font-family: "Oswald", sans-serif;
-  font-size: 200px;
+  font-size: 180px;
   font-weight: 700;
   line-height: 100%;
   color: #fff;
