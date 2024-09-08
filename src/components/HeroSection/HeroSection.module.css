@@ -3,6 +3,7 @@
   position: relative;
   min-height: 100vh;
   position: relative;
+  z-index: 1;
 }
 .img1,
 .img2,
@@ -15,6 +16,7 @@
   width: 100%;
   position: absolute;
   object-fit: cover; /* Ensure images are not stretched */
+  z-index: -1;
 }
 
 /* Set individual image dimensions */
